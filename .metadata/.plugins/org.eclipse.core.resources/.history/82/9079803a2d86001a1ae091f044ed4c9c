@@ -1,0 +1,19 @@
+
+public class Professores extends PessoaFisica {
+private String materia_leciona;
+
+
+
+void valida() {
+nome = "Everton";
+login = "1458744";
+senha = "4147414";
+
+
+
+}
+
+
+}
+
+

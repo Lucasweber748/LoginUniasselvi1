@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class Main {
+static Scanner sc = new Scanner(System.in);
+static int opção;
+static String login;
+static String senha;
+
+static Scanner sc1 = new Scanner(System.in);
+static Scanner sc2 = new Scanner(System.in);
+
+public static void main(String[] args) {
+System.out.println("Digite os Seguintes numeros para entrar nas opçoes abaixo:"
+		+ "\n1 - Academico"
+		+ "\n2 - Colaborador"
+		+ "\n3 - Empresa"
+		+ "\n4 - Comunidade"
+		+ "\n");
+opção = sc.nextInt();
+login = sc1.next();
+senha = sc2.next();
+
+switch (opção) {
+case 1:
+System.out.println("Login:");
+login = sc1.next();
+System.out.println("senha:");
+senha = sc2.next();
+Professores professor = new Professores();
+professor.setLogin(login);
+professor.setSenha("senha");
+professor.setcpf("09026415907");
+professor.validarsenha();
+break;
+
+
+case 2:
+Academicos academico = new Academicos();
+academico.setLogin("1247784");
+academico.setSenha("220817");
+academico.validarsenha();
+break;
+
+
+case 3:
+Empresas empresa = new Empresas();
+empresa.setLogin("7847841");
+empresa.setSenha("44748547");
+empresa.setCNPJ("116693547");
+empresa.validarsenha();
+break;
+}
+
+
+
+	}
+
+}

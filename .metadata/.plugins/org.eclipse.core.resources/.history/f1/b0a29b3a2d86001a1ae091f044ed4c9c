@@ -1,0 +1,5 @@
+
+public class Academicos extends PessoaFisica {
+private String curso;
+	
+}

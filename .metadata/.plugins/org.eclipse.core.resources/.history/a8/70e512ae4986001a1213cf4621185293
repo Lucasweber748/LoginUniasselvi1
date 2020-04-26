@@ -1,0 +1,38 @@
+public class Main {
+private static final int professor = 0;
+
+public static void main(String[] args) {
+
+switch (professor) {
+
+
+
+Professores professor = new Professores();
+professor.setLogin("121214");
+professor.setSenha("121212");
+professor.setcpf("09026415907");
+professor.validarsenha();
+
+
+
+case 2:
+Academicos academico = new Academicos();
+academico.setLogin("1247784");
+academico.setSenha("220817");
+academico.validarsenha();
+break;
+
+
+case 3:
+Empresas empresa = new Empresas();
+empresa.setLogin("7847841");
+empresa.setSenha("44748547");
+empresa.setCNPJ("116693547");
+empresa.validarsenha();
+break;
+}
+
+
+	}
+
+}

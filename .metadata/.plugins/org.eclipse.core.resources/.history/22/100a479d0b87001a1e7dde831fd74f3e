@@ -1,0 +1,11 @@
+
+public class Empresas extends PessoaJuridica {
+	
+	void validarsenha() {
+		if(login.equals("121214") && senha.equals("121212")){
+	        System.out.printf("Usuário %s logado com sucesso.", login);
+	    }else{
+	        System.out.println("Login ou senha inválidos!");
+	    }
+ }
+}

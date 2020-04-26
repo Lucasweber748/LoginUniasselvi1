@@ -1,0 +1,14 @@
+public class Academicos {
+
+	private String nome;
+	private String matricula;
+	private String senha;
+
+	nome = "Everton";
+	matricula ="555415";
+    curso = "Sistemas de informação";
+	senha = "1245447";
+
+
+}
+}

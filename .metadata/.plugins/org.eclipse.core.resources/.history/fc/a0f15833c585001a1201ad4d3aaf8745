@@ -1,0 +1,26 @@
+
+public class Professores extends PessoaFisica {
+private String materia_leciona;
+
+public String getMateria_leciona() {
+	return materia_leciona;
+}
+
+public void setMateria_leciona(String materia_leciona) {
+	this.materia_leciona = materia_leciona;
+}
+
+void validarsenha() {
+	
+	If( equals("seu login") && new String(txtsenha.getsenha()).equals("sua senha"))
+	{
+
+	//evento caso condiçao for verdadeira (login e senha corretos)
+	}
+	else
+	{
+	// evento caso condiçao for falsa(login ou senha incorretos)
+	}
+}
+	
+}

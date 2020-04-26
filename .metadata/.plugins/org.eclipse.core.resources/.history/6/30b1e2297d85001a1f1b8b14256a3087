@@ -1,0 +1,17 @@
+
+public class Senha {
+	PassayUtil passay = new PassayUtil();
+	
+	// Chamando o método para testar a senha 123
+	List<String> messages = passay.checkPasswordRules("123");
+	// se retornou mensagens, entao nao passou nas regras..
+	if (messages != null){
+		System.out.println("Senha inválida. Mensagens:");
+		for (String msg : messages){
+			System.out.println("-"+msg);
+		}
+	}else{
+		System.out.println("Senha válida");
+	}
+}
+}

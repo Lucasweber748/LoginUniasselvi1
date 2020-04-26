@@ -1,0 +1,14 @@
+
+public class Academicos extends PessoaFisica {
+private String curso;
+
+void validarsenha() {
+	if(login.equals("111111") && senha.equals("222222")){
+        System.out.printf("Usuário %s logado com sucesso.", login);
+        System.out.println("\nBem vindo Academico Lucas"
+    			+ "\nVoce é da turma INF0191 - SISTEMAS DE INFORMAÇÃO");
+	}else{
+        System.out.println("Login ou senha inválidos!");
+    }
+}
+}

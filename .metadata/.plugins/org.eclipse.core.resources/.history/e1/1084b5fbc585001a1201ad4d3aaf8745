@@ -1,0 +1,17 @@
+
+public class Professores extends PessoaFisica {
+private String materia_leciona;
+
+public String getMateria_leciona() {
+	return materia_leciona;
+}
+
+public void setMateria_leciona(String materia_leciona) {
+	this.materia_leciona = materia_leciona;
+}
+
+void validarsenha() {
+	
+}
+
+}

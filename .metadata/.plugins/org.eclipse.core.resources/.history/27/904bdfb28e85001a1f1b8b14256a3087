@@ -1,0 +1,8 @@
+
+public class Empresas {
+private String nome;
+private String cnpj;
+private String login;
+private String senha;
+
+}

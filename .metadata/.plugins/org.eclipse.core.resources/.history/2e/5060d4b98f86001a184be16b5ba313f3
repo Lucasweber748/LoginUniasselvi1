@@ -1,0 +1,71 @@
+import java.util.Scanner;
+public class Main {
+static Scanner sc = new Scanner(System.in);
+static int opção;
+static String login;
+static String senha;
+
+static Scanner sc1 = new Scanner(System.in);
+static Scanner sc2 = new Scanner(System.in);
+
+public static void main(String[] args) {
+System.out.println("Digite os Seguintes numeros para entrar nas opçoes abaixo:"
+		+ "\n1 - Academico"
+		+ "\n2 - Academico Sala Virtual"
+		+ "\n3 - Colaborador"
+		+ "\n4 - Empresa"
+		+ "\n5 - Comunidade"
+		+ "\n");
+opção = sc.nextInt();
+
+switch (opção) {
+case 1:
+Academicos academico = new Academicos();
+academico.setLogin("1247784");
+academico.setSenha("220817");
+academico.validarsenha();
+break;
+
+case 2:
+AcademicoSalaVirtual virtual = new AcademicoSalaVirtual();
+System.out.println("Bem vindo a Sala virtual");
+break;
+
+
+case 3:
+Professores professor = new Professores();
+System.out.println("Login:");
+System.out.println("Senha:");
+professor.setLogin("");
+professor.setSenha("");
+professor.setcpf("09026415907");
+professor.validarsenha();
+break;
+
+
+
+case 4:
+Empresas empresa = new Empresas();
+empresa.setLogin("7847841");
+empresa.setSenha("44748547");
+empresa.setCNPJ("116693547");
+empresa.validarsenha();
+break;
+
+case 5:
+Comunidade comunidade = new Comunidade();
+comunidade.setLogin("122222");
+comunidade.setSenha("444444");
+comunidade.setcpf("09026415907");
+comunidade.validarsenha();
+break;
+}
+
+
+
+
+
+
+	}
+
+}

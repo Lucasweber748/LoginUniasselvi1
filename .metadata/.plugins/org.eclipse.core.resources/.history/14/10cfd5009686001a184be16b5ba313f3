@@ -1,0 +1,31 @@
+
+public class Professores extends PessoaFisica {
+private String materia_leciona;
+
+public String getMateria_leciona() {
+	return materia_leciona;
+}
+
+public void setMateria_leciona(String materia_leciona) {
+	this.materia_leciona = materia_leciona;
+}
+
+
+
+
+
+void validarsenha() {
+	if(login.equals("121214") && senha.equals("121212")){
+        System.out.printf("Usuário %s logado com sucesso.", login);
+        System.out.println("\nBem vindo Professor"
+    			+ "\nVoce leciona a Materia de Programação Orientada a objetos");
+	}else{
+        System.out.println("Login ou senha inválidos!");
+    }
+}
+}
+
+
+
+
+
